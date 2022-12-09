@@ -84,23 +84,23 @@ pipeline {
 //                  }
 //      }
 //
-//      stage("Building Docker Image") {
-//                 steps{
-//                     sh 'docker build -t dbiradali/achatdevops .'
-//                 }
-//         }
-//
-//
-//            stage("Login to DockerHub") {
-//                 steps{
-//                    // sh 'sudo chmod 666 /var/run/docker.sock'
-//                     sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u dbiradali -p 203JMT4330'
-//                 }
-//         }
-//         stage("Push to DockerHub") {
-//                 steps{
-//                     sh 'docker push dbiradali/achatdevops'
-//                 }
-//         }
+     stage("Building Docker Image") {
+                steps{
+                    sh 'docker build -t dbiradali/ExamThourayaS2 .'
+                }
+        }
+
+
+           stage("Login to DockerHub") {
+                steps{
+                   // sh 'sudo chmod 666 /var/run/docker.sock'
+                    sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u dbiradali -p 203JMT4330'
+                }
+        }
+        stage("Push to DockerHub") {
+                steps{
+                    sh 'docker push dbiradali/achatdevops'
+                }
+        }
 }
 }
