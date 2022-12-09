@@ -86,7 +86,7 @@ pipeline {
 //
      stage("Building Docker Image") {
                 steps{
-                    sh 'docker build -t dbiradali/ExamThourayaS2 .'
+                    sh 'docker build -t dbiradali/examthourayas2 .'
                 }
         }
 
