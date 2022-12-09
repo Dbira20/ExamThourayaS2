@@ -107,7 +107,7 @@ pipeline {
      stage('Docker compose') {
         steps{
             echo 'running docker compose';
-            sh 'docker-compose up -d'
+            sh """ docker-compose up -d """;
         }
      }
 }
