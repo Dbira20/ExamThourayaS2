@@ -103,5 +103,12 @@ pipeline {
                     sh 'docker push dbiradali/examthourayas2'
                 }
         }
+
+     stage('Docker compose') {
+        steps{
+            echo 'running docker compose';
+            sh 'docker-compose up -d'
+        }
+     }
 }
 }
