@@ -19,11 +19,11 @@ pipeline {
                 credentialsId: 'b7a07fcb-55f2-462a-9a16-f41faaae0fa0';
                 }
          }
-               stage('MVN CLEAN') {
-                        steps {
-                           sh 'mvn clean '
-                        }
-                    }
+         stage('MVN CLEAN') {
+            steps {
+              sh 'mvn clean '
+               }
+            }
           stage('MVN COMPILE') {
             steps {
                sh 'mvn compile'
@@ -102,5 +102,5 @@ pipeline {
 //                     sh 'docker push dbiradali/achatdevops'
 //                 }
 //         }
-
+}
 }
