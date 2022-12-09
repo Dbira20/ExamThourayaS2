@@ -99,7 +99,7 @@ pipeline {
         }
         stage("Push to DockerHub") {
                 steps{
-                    sh 'docker push dbiradali/achatdevops'
+                    sh 'docker push dbiradali/examthourayas2'
                 }
         }
 }
