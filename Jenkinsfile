@@ -42,12 +42,13 @@ pipeline {
        }
 
 
-//
-//          stage ('Scan Sonar'){
-//             steps {
-//             sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=203JMT4330 "
-//             }
-//         }
+
+         stage ('Scan Sonar'){
+            steps {
+            sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=203JMT4330 "
+            }
+        }
+
      stage("Publish to Nexus Repository Manager") {
         steps {
             script {
