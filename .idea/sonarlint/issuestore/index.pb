@@ -9,15 +9,8 @@ m
 =src/main/java/tn/esprit/spring/services/IVoyageurService.java,f\2\f2aa4350d4b97f53c2da06282133d872a8bcc73f
 j
 :src/main/java/tn/esprit/spring/services/ITrainService.java,6\3\638f4f18c9fbed21ed97cd98555e8be21cbb7a67
-4
-.env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 u
 Esrc/main/java/tn/esprit/spring/controller/RestControllerVoyageur.java,5\f\5ff5ec83e34ba30893e0de3334f11930a2f86668
-:
-
-Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
-B
-docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
