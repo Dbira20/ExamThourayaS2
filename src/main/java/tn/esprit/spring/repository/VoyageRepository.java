@@ -12,8 +12,6 @@ import tn.esprit.spring.entities.Voyage;
 
 @Repository
 public interface VoyageRepository extends CrudRepository<Voyage, Long> {
-
-	//public Voyage findBygareDepart();
 	
 	@Query("select v from Voyage v where v.gareDepart=:ngdept and v.gareArrivee=:ngarr and v.heureDepart=:hdpt")
 	List<Voyage>RechercheVoyage(@Param("ngdept")Ville nomGareDepart,@Param("ngarr") Ville nomGareArrive, @Param("hdpt")double heureDepart);
